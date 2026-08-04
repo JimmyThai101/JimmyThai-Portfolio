@@ -29,7 +29,26 @@ export const projects: Project[] = [
     imageAlt:
       "Lead Research Pipeline dashboard showing scored district leads, program contacts, and review status",
     featured: true,
-    
+  },
+  {
+    id: "aquarium-clock",
+    title: "Aquarium Clock",
+    shortDescription:
+      "A calm digital clock set inside an animated underwater scene, with day-night lighting and gentle motion.",
+    longDescription:
+      "Built as a lightweight ambient web app with swimming fish, bubbles, seaweed, and light rays. Includes 12/24-hour time, auto lighting that follows the time of day, fullscreen mode, and a reduced-motion option.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "CSS Animations",
+    ],
+    image: "/images/projects/aquarium-clock.png",
+    imageAlt:
+      "Aquarium Clock showing the current time over an underwater scene with fish, bubbles, and light rays",
+    githubUrl: "https://github.com/JimmyThai101/aquarium-clock",
+    liveDemoUrl: "https://aquarium-clock.vercel.app/",
   },
 ];
 
