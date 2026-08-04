@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Architecture diagram placeholder">
+  <rect width="1280" height="800" fill="#18181b"/>
+  <rect x="80" y="80" width="1120" height="640" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="640" y="140" fill="#fafafa" font-family="system-ui, sans-serif" font-size="28" font-weight="600" text-anchor="middle">System Architecture</text>
+  <rect x="520" y="200" width="240" height="56" rx="8" fill="#27272a" stroke="#3f3f46"/>
+  <text x="640" y="234" fill="#e4e4e7" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Seed Organizations</text>
+  <path d="M640 256v40" stroke="#52525b" stroke-width="2"/>
+  <rect x="460" y="296" width="360" height="56" rx="8" fill="#27272a" stroke="#3f3f46"/>
+  <text x="640" y="330" fill="#e4e4e7" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Research Engine</text>
+  <path d="M640 352v40" stroke="#52525b" stroke-width="2"/>
+  <rect x="420" y="392" width="440" height="56" rx="8" fill="#27272a" stroke="#3f3f46"/>
+  <text x="640" y="426" fill="#e4e4e7" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Collection + AI Evaluation</text>
+  <path d="M640 448v40" stroke="#52525b" stroke-width="2"/>
+  <rect x="470" y="488" width="340" height="56" rx="8" fill="#27272a" stroke="#3f3f46"/>
+  <text x="640" y="522" fill="#e4e4e7" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Review Dashboard</text>
+  <path d="M640 544v40" stroke="#52525b" stroke-width="2"/>
+  <rect x="500" y="584" width="280" height="56" rx="8" fill="#27272a" stroke="#3f3f46"/>
+  <text x="640" y="618" fill="#e4e4e7" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">CSV Export</text>
+  <text x="640" y="690" fill="#71717a" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Placeholder  replace with final screenshot</text>
+</svg>

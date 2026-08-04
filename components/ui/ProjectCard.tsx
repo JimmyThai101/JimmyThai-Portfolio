@@ -52,10 +52,22 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </ul>
 
-        {(project.githubUrl || project.liveDemoUrl) && (
+        {(project.githubUrl || project.liveDemoUrl || project.caseStudySlug) && (
           <div className="mt-2 flex flex-wrap gap-3 border-t border-zinc-800 pt-5">
+            {project.caseStudySlug ? (
+              <Button
+                href={`/projects/${project.caseStudySlug}`}
+                variant="primary"
+              >
+                View Case Study
+              </Button>
+            ) : null}
             {project.liveDemoUrl ? (
-              <Button href={project.liveDemoUrl} variant="primary" external>
+              <Button
+                href={project.liveDemoUrl}
+                variant={project.caseStudySlug ? "secondary" : "primary"}
+                external
+              >
                 Live Demo
               </Button>
             ) : null}

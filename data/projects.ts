@@ -3,7 +3,7 @@ import type { Project } from "@/types/project";
 /**
  * Add a new project by appending an object here and placing its image in
  * public/images/projects. Optional githubUrl and liveDemoUrl only render
- * when provided.
+ * when provided. Set caseStudySlug to link a project card to /projects/[slug].
  */
 export const projects: Project[] = [
   {
@@ -29,6 +29,7 @@ export const projects: Project[] = [
     imageAlt:
       "Lead Research Pipeline dashboard showing scored district leads, program contacts, and review status",
     featured: true,
+    caseStudySlug: "plannedquest",
   },
   {
     id: "aquarium-clock",
@@ -47,6 +48,7 @@ export const projects: Project[] = [
     image: "/images/projects/aquarium-clock.png",
     imageAlt:
       "Aquarium Clock showing the current time over an underwater scene with fish, bubbles, and light rays",
+    caseStudySlug: "aquarium-clock",
     githubUrl: "https://github.com/JimmyThai101/aquarium-clock",
     liveDemoUrl: "https://aquarium-clock.vercel.app/",
   },

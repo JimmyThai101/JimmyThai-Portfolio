@@ -5,11 +5,11 @@ import Link from "next/link";
 import { profile } from "@/data/profile";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#contact", label: "Contact" },
 ] as const;
 
 export default function Navbar() {
@@ -26,7 +26,7 @@ export default function Navbar() {
         aria-label="Primary"
       >
         <Link
-          href="#top"
+          href="/"
           className="text-sm font-semibold tracking-tight text-zinc-50 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 rounded-sm"
           onClick={closeMenu}
         >

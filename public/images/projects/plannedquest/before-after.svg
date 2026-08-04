@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Before and after placeholder">
+  <rect width="1280" height="800" fill="#18181b"/>
+  <text x="320" y="120" fill="#fafafa" font-family="system-ui, sans-serif" font-size="24" font-weight="600" text-anchor="middle">Before</text>
+  <text x="960" y="120" fill="#fafafa" font-family="system-ui, sans-serif" font-size="24" font-weight="600" text-anchor="middle">After</text>
+  <rect x="80" y="150" width="480" height="520" rx="16" fill="#09090b" stroke="#27272a"/>
+  <rect x="720" y="150" width="480" height="520" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="320" y="430" fill="#71717a" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Manual research</text>
+  <text x="960" y="430" fill="#71717a" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Automated pipeline</text>
+  <text x="640" y="730" fill="#71717a" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Placeholder  replace with comparison screenshot</text>
+</svg>

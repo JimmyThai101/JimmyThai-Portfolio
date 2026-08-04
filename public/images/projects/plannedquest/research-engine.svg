@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Research engine placeholder">
+  <rect width="1280" height="800" fill="#18181b"/>
+  <rect x="80" y="80" width="1120" height="640" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="640" y="140" fill="#fafafa" font-family="system-ui, sans-serif" font-size="28" font-weight="600" text-anchor="middle">Research Engine</text>
+  <rect x="140" y="200" width="300" height="420" rx="8" fill="#18181b" stroke="#27272a"/>
+  <rect x="490" y="200" width="300" height="420" rx="8" fill="#18181b" stroke="#27272a"/>
+  <rect x="840" y="200" width="300" height="420" rx="8" fill="#18181b" stroke="#27272a"/>
+  <text x="290" y="240" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Discovery</text>
+  <text x="640" y="240" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Playwright</text>
+  <text x="990" y="240" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Evaluation</text>
+  <text x="640" y="690" fill="#71717a" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Placeholder  replace with engine screenshot</text>
+</svg>

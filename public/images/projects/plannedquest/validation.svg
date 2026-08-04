@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Validation placeholder">
+  <rect width="1280" height="800" fill="#18181b"/>
+  <rect x="120" y="120" width="1040" height="560" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="640" y="180" fill="#fafafa" font-family="system-ui, sans-serif" font-size="28" font-weight="600" text-anchor="middle">Source Validation</text>
+  <rect x="180" y="230" width="920" height="80" rx="8" fill="#18181b" stroke="#27272a"/>
+  <rect x="180" y="340" width="920" height="80" rx="8" fill="#18181b" stroke="#27272a"/>
+  <rect x="180" y="450" width="920" height="80" rx="8" fill="#18181b" stroke="#27272a"/>
+  <text x="640" y="620" fill="#71717a" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Placeholder  replace with validation screenshot</text>
+</svg>

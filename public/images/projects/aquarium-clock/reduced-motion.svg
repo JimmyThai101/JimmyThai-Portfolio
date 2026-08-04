@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Reduced motion placeholder">
+  <rect width="1280" height="800" fill="#0f2744"/>
+  <rect x="340" y="220" width="600" height="280" rx="16" fill="#09090b" stroke="#27272a" opacity="0.85"/>
+  <text x="640" y="320" fill="#fafafa" font-family="system-ui, sans-serif" font-size="48" font-weight="700" text-anchor="middle">10:35</text>
+  <text x="640" y="380" fill="#d4d4d8" font-family="system-ui, sans-serif" font-size="20" text-anchor="middle">Reduced motion enabled</text>
+  <text x="640" y="120" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="28" font-weight="600" text-anchor="middle">Reduced Motion</text>
+  <text x="640" y="720" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Placeholder  static readable clock view</text>
+</svg>

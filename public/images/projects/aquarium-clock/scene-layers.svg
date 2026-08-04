@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Scene layers placeholder">
+  <rect width="1280" height="800" fill="#0f2744"/>
+  <rect x="0" y="620" width="1280" height="180" fill="#0a1a2e"/>
+  <circle cx="200" cy="500" r="18" fill="#60a5fa" opacity="0.7"/>
+  <circle cx="980" cy="420" r="14" fill="#34d399" opacity="0.7"/>
+  <rect x="300" y="560" width="8" height="120" fill="#166534" opacity="0.8"/>
+  <rect x="900" y="580" width="8" height="100" fill="#166534" opacity="0.8"/>
+  <text x="640" y="120" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="28" font-weight="600" text-anchor="middle">Scene Layers</text>
+  <text x="640" y="720" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Placeholder  fish, bubbles, seaweed, light rays</text>
+</svg>

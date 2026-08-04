@@ -9,6 +9,8 @@ export type Project = {
   imageAlt: string;
   /** When true, this project is sorted to the top of the list */
   featured?: boolean;
+  /** Route slug for the case study page, e.g. "plannedquest" -> /projects/plannedquest */
+  caseStudySlug?: string;
   githubUrl?: string;
   liveDemoUrl?: string;
 };
