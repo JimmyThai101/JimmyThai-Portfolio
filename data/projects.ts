@@ -25,11 +25,11 @@ export const projects: Project[] = [
       "CSV",
       "PostgreSQL",
     ],
-    image: "/images/projects/plannedquest-lead-research.svg",
-    imageAlt: "PlannedQuest Lead Research Pipeline project preview",
+    image: "/images/projects/plannedquest-leads-dashboard.png",
+    imageAlt:
+      "Lead Research Pipeline dashboard showing scored district leads, program contacts, and review status",
     featured: true,
-    // githubUrl: "https://github.com/yourusername/repo",
-    // liveDemoUrl: "https://your-demo-url.com",
+    
   },
 ];
 

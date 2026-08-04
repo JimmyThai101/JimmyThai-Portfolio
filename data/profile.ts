@@ -6,7 +6,6 @@ export const profile = {
   about:
     "I am an incoming Computer Engineering and Computer Science student at USC. My experience includes full-stack development, web crawling, data processing, AI-assisted research workflows, and STEM leadership. I enjoy understanding how systems work, improving inefficient processes, and turning ideas into usable software.",
 
-  // Update these placeholders with your real links
   email: "jimmythai2108@gmail.com",
   githubUrl: "https://github.com/JimmyThai101",
   linkedinUrl: "https://www.linkedin.com/in/jimmy-thai-a6521b31a/",
