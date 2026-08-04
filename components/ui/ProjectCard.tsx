@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Project } from "@/types/project";
+import Button from "@/components/ui/Button";
 
 type ProjectCardProps = {
   project: Project;
@@ -52,26 +53,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </ul>
 
         {(project.githubUrl || project.liveDemoUrl) && (
-          <div className="flex flex-wrap gap-3 pt-1">
-            {project.githubUrl ? (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-md border border-zinc-700 px-3 py-1.5 text-sm text-zinc-200 transition-colors duration-200 hover:border-zinc-500 hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
-              >
-                GitHub
-              </a>
-            ) : null}
+          <div className="mt-2 flex flex-wrap gap-3 border-t border-zinc-800 pt-5">
             {project.liveDemoUrl ? (
-              <a
-                href={project.liveDemoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-md border border-zinc-700 px-3 py-1.5 text-sm text-zinc-200 transition-colors duration-200 hover:border-zinc-500 hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
-              >
+              <Button href={project.liveDemoUrl} variant="primary" external>
                 Live Demo
-              </a>
+              </Button>
+            ) : null}
+            {project.githubUrl ? (
+              <Button href={project.githubUrl} variant="secondary" external>
+                View on GitHub
+              </Button>
             ) : null}
           </div>
         )}
