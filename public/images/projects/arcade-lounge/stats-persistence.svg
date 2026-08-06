@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Arcade Lounge stats persistence">
+  <rect width="1280" height="800" fill="#0a0a0a"/>
+  <text x="640" y="100" fill="#fafafa" font-family="system-ui, sans-serif" font-size="28" font-weight="600" text-anchor="middle">Stats Persistence</text>
+  <rect x="140" y="200" width="280" height="160" rx="14" fill="#1c1c1c" stroke="#c41e3a" stroke-opacity="0.45"/>
+  <text x="280" y="270" fill="#fafafa" font-family="system-ui, sans-serif" font-size="18" font-weight="600" text-anchor="middle">Play a round</text>
+  <text x="280" y="305" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Win / Lose / Tie</text>
+  <polygon points="460,280 520,260 520,300" fill="#d4af37"/>
+  <rect x="540" y="200" width="280" height="160" rx="14" fill="#1c1c1c" stroke="#d4af37" stroke-opacity="0.45"/>
+  <text x="680" y="270" fill="#fafafa" font-family="system-ui, sans-serif" font-size="18" font-weight="600" text-anchor="middle">Update stats</text>
+  <text x="680" y="305" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">recordGameResult()</text>
+  <polygon points="860,280 920,260 920,300" fill="#d4af37"/>
+  <rect x="940" y="200" width="200" height="160" rx="14" fill="#1c1c1c" stroke="#2ecc71" stroke-opacity="0.45"/>
+  <text x="1040" y="270" fill="#fafafa" font-family="system-ui, sans-serif" font-size="18" font-weight="600" text-anchor="middle">localStorage</text>
+  <text x="1040" y="305" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Persist locally</text>
+  <rect x="220" y="460" width="840" height="200" rx="16" fill="#141414" stroke="#2a2a2a"/>
+  <text x="640" y="520" fill="#d4af37" font-family="Georgia, serif" font-size="22" font-weight="700" text-anchor="middle">Your Stats</text>
+  <text x="640" y="565" fill="#fafafa" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Total games played · wins · losses · ties · Memory bests</text>
+  <text x="640" y="610" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Survives refreshes without accounts or a database</text>
+</svg>

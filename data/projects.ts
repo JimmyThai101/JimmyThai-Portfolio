@@ -52,6 +52,27 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/JimmyThai101/aquarium-clock",
     liveDemoUrl: "https://aquarium-clock.vercel.app/",
   },
+  {
+    id: "arcade-lounge",
+    title: "Arcade Lounge",
+    shortDescription:
+      "A casino-inspired mini-game arcade with five playable games, local stats, and optional sound — for fun only, no gambling.",
+    longDescription:
+      "A Next.js game hub featuring Make 21, Rock Paper Scissors, High Card, Dice Duel, and Memory Match. Shared lounge styling, persistent localStorage stats, muteable Web Audio effects, and dedicated screens for each game.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Web Audio API",
+      "localStorage",
+    ],
+    image: "/images/projects/arcade-lounge.png",
+    imageAlt:
+      "Arcade Lounge hub showing five mini-game cards and a Your Stats panel on a dark lounge background",
+    caseStudySlug: "arcade-lounge",
+    githubUrl: "https://github.com/JimmyThai101/Arcade-lounge",
+  },
 ];
 
 /** Featured projects first, then the rest in file order */

@@ -1,10 +1,12 @@
 import { aquariumClockCaseStudy } from "@/data/case-studies/aquarium-clock";
+import { arcadeLoungeCaseStudy } from "@/data/case-studies/arcade-lounge";
 import { plannedquestCaseStudy } from "@/data/case-studies/plannedquest";
 import type { CaseStudy } from "@/types/case-study";
 
 export const caseStudies: CaseStudy[] = [
   plannedquestCaseStudy,
   aquariumClockCaseStudy,
+  arcadeLoungeCaseStudy,
 ];
 
 export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {
