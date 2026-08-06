@@ -23,7 +23,7 @@
   <line x1="640" y1="390" x2="640" y2="460" stroke="#2a2a2a" stroke-width="2"/>
   <rect x="300" y="460" width="680" height="90" rx="12" fill="#141414" stroke="#2a2a2a"/>
   <text x="640" y="495" fill="#d4af37" font-family="system-ui, sans-serif" font-size="16" font-weight="600" text-anchor="middle">Shared Layer</text>
-  <text x="640" y="525" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">GameLayout · ScoreBoard · Sounds · Stats (localStorage)</text>
+  <text x="640" y="525" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">GameLayout ï¿½ ScoreBoard ï¿½ Sounds ï¿½ Stats (localStorage)</text>
   <rect x="300" y="590" width="680" height="90" rx="12" fill="#141414" stroke="#2a2a2a"/>
   <text x="640" y="625" fill="#fafafa" font-family="system-ui, sans-serif" font-size="16" font-weight="600" text-anchor="middle">Client-only Next.js App</text>
   <text x="640" y="655" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">No accounts, no backend, no real-money systems</text>

@@ -14,6 +14,6 @@
   <text x="1040" y="305" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Persist locally</text>
   <rect x="220" y="460" width="840" height="200" rx="16" fill="#141414" stroke="#2a2a2a"/>
   <text x="640" y="520" fill="#d4af37" font-family="Georgia, serif" font-size="22" font-weight="700" text-anchor="middle">Your Stats</text>
-  <text x="640" y="565" fill="#fafafa" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Total games played · wins · losses · ties · Memory bests</text>
+  <text x="640" y="565" fill="#fafafa" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Total games played ï¿½ wins ï¿½ losses ï¿½ ties ï¿½ Memory bests</text>
   <text x="640" y="610" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Survives refreshes without accounts or a database</text>
 </svg>
