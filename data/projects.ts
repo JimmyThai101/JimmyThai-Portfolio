@@ -72,7 +72,7 @@ export const projects: Project[] = [
       "Arcade Lounge hub showing five mini-game cards and a Your Stats panel on a dark lounge background",
     caseStudySlug: "arcade-lounge",
     githubUrl: "https://github.com/JimmyThai101/Arcade-lounge",
-    liveDemoUrl: "https://arcade-lounge-pox6zh9h7-jimmy-thai.vercel.app/",
+    liveDemoUrl: "https://arcade-lounge-cyan.vercel.app/",
   },
 ];
 
