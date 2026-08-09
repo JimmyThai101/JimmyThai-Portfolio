@@ -56,20 +56,23 @@ export const projects: Project[] = [
     id: "arcade-lounge",
     title: "Arcade Lounge",
     shortDescription:
-      "A casino-inspired mini-game arcade with five playable games, local stats, and optional sound — for fun only, no gambling.",
+      "A casino-inspired mini-game arcade with six playable games, Jimmycoin fake currency, Google sign-in, and a global leaderboard.",
     longDescription:
-      "A Next.js game hub featuring Make 21, Rock Paper Scissors, High Card, Dice Duel, and Memory Match. Shared lounge styling, persistent localStorage stats, muteable Web Audio effects, and dedicated screens for each game.",
+      "A Next.js game hub featuring Make 21, Rock Paper Scissors, High Card, Dice Duel, Memory Match, and Slots. Win free games to earn Jimmycoin, wager or spin it for fun only, track local stats, and climb a PostgreSQL-backed wins leaderboard after Google sign-in.",
     technologies: [
       "Next.js",
       "React",
       "TypeScript",
       "Tailwind CSS",
+      "Auth.js",
+      "Prisma",
+      "PostgreSQL",
       "Web Audio API",
       "localStorage",
     ],
     image: "/images/projects/arcade-lounge.png",
     imageAlt:
-      "Arcade Lounge hub showing five mini-game cards and a Your Stats panel on a dark lounge background",
+      "Arcade Lounge hub showing six mini-game cards, Jimmycoin balance, and a global leaderboard",
     caseStudySlug: "arcade-lounge",
     githubUrl: "https://github.com/JimmyThai101/Arcade-lounge",
     liveDemoUrl: "https://arcade-lounge-cyan.vercel.app/",

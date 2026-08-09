@@ -99,7 +99,11 @@ function renderSection(caseStudy: CaseStudy, key: CaseStudySectionKey) {
       const section = sections.aiIntegration;
       if (!section) return null;
       return (
-        <AIIntegration title={section.title} paragraphs={section.paragraphs} />
+        <AIIntegration
+          title={section.title}
+          paragraphs={section.paragraphs}
+          prompts={section.prompts}
+        />
       );
     }
     case "designProcess": {

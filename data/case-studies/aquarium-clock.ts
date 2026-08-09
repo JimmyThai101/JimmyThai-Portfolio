@@ -22,6 +22,7 @@ export const aquariumClockCaseStudy: CaseStudy = {
     "overview",
     "technologyStack",
     "architecture",
+    "aiIntegration",
     "animationApproach",
     "accessibility",
     "designDecisions",
@@ -35,6 +36,61 @@ export const aquariumClockCaseStudy: CaseStudy = {
       paragraphs: [
         "Aquarium Clock is a personal front-end project built as a readable digital clock wrapped in a themed underwater environment. The goal was to create something visually distinct while keeping the interface simple, responsive, and easy to use as a fullscreen ambient display.",
         "The app combines a central clock panel with animated fish, bubbles, seaweed, light rays, and sand. Users can switch between 12-hour and 24-hour time, cycle lighting modes, enter fullscreen, and reduce motion when preferred.",
+      ],
+    },
+    aiIntegration: {
+      title: "AI Collaboration & Prompts",
+      paragraphs: [
+        "I built Aquarium Clock with AI pair-programming in Cursor rather than training a custom model. The first prompt was a full product brief: stack constraints, aquarium scene requirements, accessibility rules, and hydration safety. That kept the scaffold close to a shippable ambient clock instead of a generic demo.",
+        "Follow-up prompts were smaller and visual — for example tightening the palette to a calmer blue mood and clarifying control options — while I kept ownership of readability, reduced-motion behavior, and playtesting the fullscreen experience.",
+        "The useful pattern was the same one I used on later projects: lock non-negotiables early, ask for one change at a time, and reject anything that added heavy libraries, copyrighted assets, or hydration bugs.",
+      ],
+      prompts: [
+        {
+          label: "Initial build brief (excerpt)",
+          prompt: `Build the first complete version of a relaxing aquarium clock web app.
+
+TECH: Next.js App Router, TypeScript, Tailwind CSS. Do not install unnecessary packages. Use CSS animations and original CSS/SVG visuals — no external animation libraries or copyrighted assets.
+
+Core interface:
+- Current local time with seconds + current date
+- 12/24-hour toggle saved in localStorage
+- Fullscreen button
+- Highly readable clock over the animated background
+- Responsive for phones, tablets, and desktops
+- Clean loading state before the client clock is ready (avoid hydration errors)
+
+Aquarium:
+- Original underwater scene with fish, rising bubbles, seaweed, light rays, and particles
+- Morning / afternoon / evening / night lighting from local time
+- Keep animation relaxing, not busy
+- No copyrighted characters, stock images, or external image URLs
+- No Math.random() during React rendering — use fixed configuration data
+- Centralize fish speed, size, depth, direction, and bubble count in one config file
+
+Accessibility:
+- Respect prefers-reduced-motion + manual reduced-motion toggle
+- Semantic buttons, focus states, accessible labels
+- Separate clock logic, controls, aquarium visuals, and configuration`,
+        },
+        {
+          label: "Iteration: mood, palette, and controls",
+          prompt: `Make the color more blue / chill and aesthetically pleasing.
+Keep the clock readable.
+Maybe add clearer options to change time format and lighting so the ambient mood is easier to control.
+Do not break reduced motion, hydration safety, or the existing scene structure.`,
+        },
+        {
+          label: "How I steered the AI (meta prompt pattern)",
+          prompt: `When changing Aquarium Clock:
+1) Restate non-negotiables (readable clock, no heavy libs, no copyrighted assets, no hydration bugs)
+2) Describe only the visual or control change being requested
+3) Point to the files/systems to touch (lighting hook, scene layers, controls)
+4) Ask for lint/build after larger edits
+5) Reject solutions that fight prefers-reduced-motion or make the scene busier than the clock
+
+Treat the assistant as an implementer. I own product taste, accessibility checks, and final review.`,
+        },
       ],
     },
     technologyStack: {

@@ -3,6 +3,16 @@ export type CaseStudyTextSection = {
   paragraphs: string[];
 };
 
+export type PromptExample = {
+  label: string;
+  prompt: string;
+};
+
+export type AIIntegrationSection = CaseStudyTextSection & {
+  /** Optional example prompts shown as callouts in the AI section. */
+  prompts?: PromptExample[];
+};
+
 export type CaseStudyHero = {
   role: string;
   timeline: string;
@@ -56,7 +66,7 @@ export type CaseStudySections = {
     description?: string;
     steps: FlowStep[];
   };
-  aiIntegration?: CaseStudyTextSection;
+  aiIntegration?: AIIntegrationSection;
   designProcess?: {
     title: string;
     description?: string;

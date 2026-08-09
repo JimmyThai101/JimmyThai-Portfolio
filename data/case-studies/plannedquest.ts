@@ -277,12 +277,56 @@ export const plannedquestCaseStudy: CaseStudy = {
       ],
     },
     aiIntegration: {
-      title: "AI Integration",
+      title: "AI Integration & Prompts",
       paragraphs: [
         "AI was used selectively as part of the evaluation layer. I did not train or fine-tune a model for this project. Instead, the system relied on prompt refinement, qualification rules, structured inputs, source validation, token optimization, fallback modes, and human verification.",
         "Deterministic collection ran first. The model received bounded context such as page excerpts, role titles, and organization metadata rather than open-ended instructions to find contacts on its own. Prompts were refined to emphasize evidence-based qualification and to reject candidates when source material was weak or ambiguous.",
+        "Separate task prompts beat one giant “decide everything” prompt. Ranking crawled candidates, optional web-search fallback, and crawler distillation each had their own system instructions, JSON schemas, and validation steps after the model replied.",
         "AI was never allowed to invent contacts. Every accepted result required supporting evidence from collected pages, and reviewers could inspect the source URL behind each candidate. When model output was unavailable or low confidence, the pipeline could fall back to deterministic results or route items to manual review.",
-        "This approach kept AI useful for semantic judgment while preserving auditability. The goal was not maximum automation, but higher-quality review input with defensible provenance.",
+      ],
+      prompts: [
+        {
+          label: "Guardrails baked into every AI task",
+          prompt: `You may only use the provided text.
+Do not invent contacts.
+Do not infer emails.
+Do not use outside knowledge.
+Return null if evidence is missing.
+Every selected contact must cite the exact evidence text.
+Choose at most 3 program contacts and at most 4 procurement contacts.
+Classify assistants separately from decision makers.`,
+        },
+        {
+          label: "System prompt: rank crawled program contacts",
+          prompt: `You classify K-12 district staff for a college/career-readiness software vendor.
+You may ONLY use the provided candidate text. Do not invent names, emails, titles, or URLs.
+Do not use outside knowledge. Refer to candidates only by their given index.
+Prefer Career Preparedness Systems Framework (CPSF), then Career Pathways, College & Career Readiness, 21st Century Career Readiness, CTE.
+Classify assistants (admin assistant / secretary) as program_assistant, never as primary.
+Choose at most one primary_program_lead and at most two secondary_program_lead.
+If evidence is weak or ambiguous, set human_review_needed = true.
+
+User payload shape:
+{ "district_name": "...", "candidates": [{ "index": 0, "name": "...", "title": "...", "email": "...", "snippet": "...", "source_url": "..." }] }`,
+        },
+        {
+          label: "When to call AI (trigger rules)",
+          prompt: `Use OpenAI only after the crawler has collected evidence. Trigger AI only when deterministic logic fails, for example:
+- No program contact has score >= 65
+- Top 3 program contacts are within 8 points of each other
+- A page has many contacts and the parser cannot reliably group names/titles/emails
+- The title is ambiguous, such as "Coordinator" without clear department
+
+Do NOT call AI when a target contact already has an exact title and email from an official page, or when the only task is regex extraction.`,
+        },
+        {
+          label: "System prompt: distill successful AI finds into crawler rules",
+          prompt: `You help improve a deterministic K-12 district contact crawler.
+Given how an AI step successfully identified a college/career readiness contact, suggest GENERIC improvements that apply to ANY district.
+Do NOT name specific districts, people, emails, or full URLs.
+Frame each hint as a reusable rule, e.g. 'add search keyword X', 'match title phrase Y', 'crawl paths containing Z'.
+Keep lists short (2-5 items each). Summary is one sentence of the highest-value change.`,
+        },
       ],
     },
     designProcess: {
