@@ -4,7 +4,13 @@ export const profile = {
   heroDescription:
     "I build full-stack applications, automation tools, and AI-assisted research systems. I am interested in software engineering, artificial intelligence, and creating practical technology that solves real problems.",
   about:
-    "I am an incoming Computer Engineering and Computer Science student at USC. My experience includes full-stack development, web crawling, data processing, AI-assisted research workflows, and STEM leadership. I enjoy understanding how systems work, improving inefficient processes, and turning ideas into usable software.",
+    "I am an incoming Computer Engineering and Computer Science student at USC. I enjoy building practical software — from full-stack apps and automation tools to AI-assisted research systems that make messy workflows easier to trust and review.",
+  aboutDetails:
+    "My experience includes web crawling, data processing, dashboard design, and STEM leadership. I like understanding how systems work end to end, improving inefficient processes, and turning ideas into polished products people can actually use.",
+  headshot: {
+    src: "/images/jimmy-thai-headshot.png",
+    alt: "Professional headshot of Jimmy Thai in a suit",
+  },
 
   email: "jimmythai2108@gmail.com",
   githubUrl: "https://github.com/JimmyThai101",
