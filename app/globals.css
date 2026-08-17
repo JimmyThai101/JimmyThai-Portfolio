@@ -49,3 +49,43 @@ body {
   background: rgba(96, 165, 250, 0.3);
   color: #fafafa;
 }
+
+.scroll-reveal {
+  transition:
+    opacity 500ms ease,
+    transform 500ms ease;
+}
+
+.scroll-reveal.scroll-reveal-pending:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.story-shot img {
+  transition: transform 300ms ease;
+}
+
+.story-shot:hover img {
+  transform: scale(1.02);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .scroll-reveal.scroll-reveal-pending:not(.is-visible),
+  .scroll-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .story-shot img,
+  .story-shot:hover img {
+    transform: none;
+    transition: none;
+  }
+}

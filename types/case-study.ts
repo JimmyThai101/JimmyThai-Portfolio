@@ -1,100 +1,96 @@
-export type CaseStudyTextSection = {
+export type CaseStudyMetric = {
+  value: string;
+  label: string;
+};
+
+export type CaseStudyCompareSide = {
   title: string;
-  paragraphs: string[];
+  body: string;
 };
 
-export type PromptExample = {
+export type CaseStudyProcessStep = {
   label: string;
-  prompt: string;
+  description: string;
 };
 
-export type AIIntegrationSection = CaseStudyTextSection & {
-  /** Optional example prompts shown as callouts in the AI section. */
-  prompts?: PromptExample[];
-};
-
-export type CaseStudyHero = {
-  role: string;
-  timeline: string;
-  technologies: string[];
-  summary: string;
-};
-
-export type FlowStep = {
-  label: string;
-  description?: string;
-};
-
-export type TechnologyItem = {
-  name: string;
-  reason: string;
-};
-
-export type DesignDecision = {
-  decision: string;
-  reason: string;
-  tradeoffs: string;
-  benefits: string;
-};
-
-export type GalleryItem = {
+export type CaseStudyShot = {
   src: string;
   alt: string;
   caption: string;
 };
 
-export type CaseStudySections = {
-  problem?: CaseStudyTextSection;
-  role?: CaseStudyTextSection;
-  overview?: CaseStudyTextSection;
-  architecture?: {
-    title: string;
-    description?: string;
-    steps: FlowStep[];
-  };
-  technologyStack?: {
-    title: string;
-    description?: string;
-    items: TechnologyItem[];
-  };
-  designDecisions?: {
-    title: string;
-    items: DesignDecision[];
-  };
-  methodology?: {
-    title: string;
-    description?: string;
-    steps: FlowStep[];
-  };
-  aiIntegration?: AIIntegrationSection;
-  designProcess?: {
-    title: string;
-    description?: string;
-    steps: FlowStep[];
-  };
-  collaboration?: CaseStudyTextSection;
-  results?: CaseStudyTextSection;
-  lessonsLearned?: CaseStudyTextSection;
-  animationApproach?: CaseStudyTextSection;
-  accessibility?: CaseStudyTextSection;
-  challenges?: CaseStudyTextSection;
-  futureImprovements?: CaseStudyTextSection;
-  nextSteps?: CaseStudyTextSection;
-  gallery?: {
-    title: string;
-    items: GalleryItem[];
-  };
+export type CaseStudyDecision = {
+  decision: string;
+  why: string;
 };
 
-export type CaseStudySectionKey = keyof CaseStudySections;
+export type CaseStudyDetail = {
+  title: string;
+  body: string;
+};
+
+export type CaseStudyCta = {
+  title: string;
+  body: string;
+  primaryLabel: string;
+  primaryHref: string;
+  primaryExternal?: boolean;
+  secondaryLabel?: string;
+  secondaryHref?: string;
+  secondaryExternal?: boolean;
+};
+
+export type CaseStudyNavItem = {
+  id: string;
+  label: string;
+};
+
+export type CaseStudyHero = {
+  /** Bold conclusion-style statement under the title */
+  statement: string;
+  role: string;
+  timeline: string;
+  /** Keep to 4–6 technologies */
+  technologies: string[];
+  /** 1–2 sentences max */
+  summary: string;
+};
 
 export type CaseStudy = {
   slug: string;
   projectId: string;
   title: string;
   hero: CaseStudyHero;
-  sections: CaseStudySections;
-  sectionOrder: CaseStudySectionKey[];
-  /** Use "grid" for compact step layouts; defaults to vertical diagram. */
-  architectureLayout?: "diagram" | "grid";
+  heroImage: CaseStudyShot;
+  metrics: CaseStudyMetric[];
+  problemSolution: {
+    title: string;
+    problem: CaseStudyCompareSide;
+    solution: CaseStudyCompareSide;
+  };
+  process: {
+    title: string;
+    steps: CaseStudyProcessStep[];
+  };
+  quote: {
+    text: string;
+    attribution?: string;
+  };
+  shots: CaseStudyShot[];
+  decisions: {
+    title: string;
+    items: CaseStudyDecision[];
+  };
+  contribution: {
+    title: string;
+    items: string[];
+  };
+  lessons: {
+    title: string;
+    items: string[];
+  };
+  /** Secondary details + prompts live here, collapsed by default */
+  details: CaseStudyDetail[];
+  cta: CaseStudyCta;
+  nav: CaseStudyNavItem[];
 };

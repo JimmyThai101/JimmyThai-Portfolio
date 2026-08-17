@@ -25,9 +25,9 @@ export const projects: Project[] = [
       "CSV",
       "PostgreSQL",
     ],
-    image: "/images/projects/plannedquest-leads-dashboard.png",
+    image: "/images/projects/plannedquest/pipeline-run.png",
     imageAlt:
-      "Lead Research Pipeline dashboard showing scored district leads, program contacts, and review status",
+      "Lead Research Pipeline Run tab showing completed crawl stages, contact totals, and live logs",
     featured: true,
     caseStudySlug: "plannedquest",
   },
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/aquarium-clock.png",
     imageAlt:
-      "Aquarium Clock showing the current time over an underwater scene with fish, bubbles, and light rays",
+      "Aquarium Clock night mood showing readable time over a dark underwater scene",
     caseStudySlug: "aquarium-clock",
     githubUrl: "https://github.com/JimmyThai101/aquarium-clock",
     liveDemoUrl: "https://aquarium-clock.vercel.app/",
