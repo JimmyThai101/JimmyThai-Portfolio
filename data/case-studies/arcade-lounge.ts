@@ -5,7 +5,7 @@ export const arcadeLoungeCaseStudy: CaseStudy = {
   projectId: "arcade-lounge",
   title: "Arcade Lounge",
   hero: {
-    statement: "Six games, one lounge—and zero real-money gambling.",
+    statement: "Eight games, one lounge—and zero real-money gambling.",
     role: "Personal Project — Designer & Developer",
     timeline: "2026",
     technologies: [
@@ -17,17 +17,17 @@ export const arcadeLoungeCaseStudy: CaseStudy = {
       "Web Audio",
     ],
     summary:
-      "A casino-inspired hub with six mini-games, fake Jimmycoin, optional Google sign-in, and a global wins leaderboard.",
+      "A casino-inspired hub with eight mini-games, fake Jimmycoin, optional Google sign-in, and three leaderboards—wins, Neon Dash time, and Jimmy Flappy score.",
   },
   heroImage: {
     src: "/images/projects/arcade-lounge.png",
-    alt: "Arcade Lounge hub with six games and leaderboard",
-    caption: "Hub cards, Jimmycoin balance, Google sign-in, and global standings on one dark lounge surface.",
+    alt: "Arcade Lounge hub with game cards and leaderboards",
+    caption: "Hub cards, Jimmycoin balance, Google sign-in, and three standings boards on one dark lounge surface.",
   },
   metrics: [
-    { value: "6", label: "Playable mini-games" },
+    { value: "8", label: "Playable mini-games" },
     { value: "$0", label: "Real money in the loop" },
-    { value: "1", label: "Shared lounge design system" },
+    { value: "3", label: "Leaderboards: wins, Dash, Flappy" },
     { value: "Guest+", label: "Play first, sign in optional" },
   ],
   problemSolution: {
@@ -38,15 +38,15 @@ export const arcadeLoungeCaseStudy: CaseStudy = {
     },
     solution: {
       title: "One cohesive lounge product",
-      body: "Shared layout, stats, sound, Jimmycoin rewards, and an optional leaderboard wrapped around six quick games.",
+      body: "Shared layout, stats, sound, Jimmycoin rewards, and three optional leaderboards wrapped around eight quick games.",
     },
   },
   process: {
-    title: "Hub first, then the economy and identity layers",
+    title: "Hub first, then the economy, canvas games, and identity",
     steps: [
       {
         label: "Game hub",
-        description: "Six cards route into dedicated play screens.",
+        description: "Eight cards route into dedicated play screens.",
       },
       {
         label: "Shared shell",
@@ -54,7 +54,7 @@ export const arcadeLoungeCaseStudy: CaseStudy = {
       },
       {
         label: "Jimmycoin",
-        description: "Win free games to earn; spend in Make 21 and Slots.",
+        description: "Win free table games to earn; spend in Make 21 and Slots. Dash and Flappy stay free.",
       },
       {
         label: "Local stats",
@@ -65,8 +65,8 @@ export const arcadeLoungeCaseStudy: CaseStudy = {
         description: "Auth.js + moderated usernames when env is configured.",
       },
       {
-        label: "Leaderboard",
-        description: "Prisma/Postgres ranks signed-in wins globally.",
+        label: "Leaderboards",
+        description: "Prisma/Postgres ranks wins, Neon Dash survival time, and Jimmy Flappy pipes passed.",
       },
     ],
   },
@@ -77,18 +77,18 @@ export const arcadeLoungeCaseStudy: CaseStudy = {
   shots: [
     {
       src: "/images/projects/arcade-lounge/hub-layout.svg",
-      alt: "Hub layout with six games",
-      caption: "Six-game hub plus leaderboard keeps discovery and competition in one scroll.",
+      alt: "Hub layout diagram with game cards and a leaderboard",
+      caption: "The hub pattern still holds: games, Jimmycoin, and standings in one scroll. Live now: eight games and three boards.",
     },
     {
       src: "/images/projects/arcade-lounge/game-architecture.svg",
       alt: "Architecture diagram",
-      caption: "Guest play stays local; signed-in wins sync through Auth.js and Prisma.",
+      caption: "Guest play stays local; signed-in wins, Dash times, and Flappy scores sync through Auth.js and Prisma.",
     },
     {
       src: "/images/projects/arcade-lounge/stats-persistence.svg",
       alt: "Stats persistence diagram",
-      caption: "Free-game wins feed Jimmycoin; wager games spend it without real money.",
+      caption: "Free table-game wins feed Jimmycoin; wager games spend it. Neon Dash and Jimmy Flappy stay free with their own boards.",
     },
   ],
   decisions: {
@@ -104,17 +104,17 @@ export const arcadeLoungeCaseStudy: CaseStudy = {
       },
       {
         decision: "Ship games before auth",
-        why: "Identity came after the six-game loop felt cohesive.",
+        why: "Identity came after the table-game loop felt cohesive, then canvas runners got their own boards.",
       },
     ],
   },
   contribution: {
     title: "What I personally built",
     items: [
-      "Hub, shared UI kit, and all six game screens",
-      "Jimmycoin earn/spend loop across free games, Make 21, and Slots",
-      "Muteable Web Audio feedback and local stats",
-      "Google sign-in, username moderation, and global leaderboard",
+      "Hub, shared UI kit, six table games, and two canvas runners",
+      "Jimmycoin earn/spend loop across free games, Make 21 (double down/split), and Slots",
+      "Muteable Web Audio, local stats, and Geometry Dash / Flappy canvases",
+      "Google sign-in, username moderation, and three global leaderboards",
     ],
   },
   lessons: {
@@ -128,7 +128,7 @@ export const arcadeLoungeCaseStudy: CaseStudy = {
   details: [
     {
       title: "AI collaboration note",
-      body: "Directed Cursor with a long initial brief, then narrower prompts for Jimmycoin/Slots and Auth/leaderboard. I reviewed every change and rejected real-money drift.",
+      body: "Directed Cursor with a long initial brief, then narrower prompts for Jimmycoin/Slots, Auth/leaderboard, Neon Dash, and Jimmy Flappy. I reviewed every change and rejected real-money drift.",
     },
     {
       title: "Prompt pattern I reused",
@@ -136,12 +136,12 @@ export const arcadeLoungeCaseStudy: CaseStudy = {
     },
     {
       title: "Games included",
-      body: "Make 21, Rock Paper Scissors, High Card, Dice Duel, Memory Match, and Slots.",
+      body: "Make 21, Rock Paper Scissors, High Card, Dice Duel, Memory Match, Slots, Neon Dash, and Jimmy Flappy.",
     },
   ],
   cta: {
     title: "Play the lounge",
-    body: "Jump into the live arcade, or browse the repo if you want the game architecture.",
+    body: "Jump into the live arcade—table games plus Neon Dash and Jimmy Flappy—or browse the repo if you want the game architecture.",
     primaryLabel: "Live demo",
     primaryHref: "https://arcade-lounge-cyan.vercel.app/",
     primaryExternal: true,

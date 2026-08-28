@@ -35,9 +35,9 @@ export const projects: Project[] = [
     id: "aquarium-clock",
     title: "Aquarium Clock",
     shortDescription:
-      "A calm digital clock set inside an animated underwater scene, with day-night lighting and gentle motion.",
+      "A calm fullscreen clock with aquarium, beach, and space scenes, plus looks, lighting, a next-event timer, and optional ambient sound.",
     longDescription:
-      "Built as a lightweight ambient web app with swimming fish, bubbles, seaweed, and light rays. Includes 12/24-hour time, auto lighting that follows the time of day, fullscreen mode, and a reduced-motion option.",
+      "A client-only ambient web app: three scenes, five aquarium looks, day-night lighting, London/New York/Tokyo clocks, and a named timer or alarm. Optional Web Audio bubbles, weather-aware rain, fullscreen, and reduced motion—the time stays primary.",
     technologies: [
       "Next.js",
       "React",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/aquarium-clock.png",
     imageAlt:
-      "Aquarium Clock night mood showing readable time over a dark underwater scene",
+      "Aquarium Clock showing readable time over a scene, with scene, look, lighting, and event controls",
     caseStudySlug: "aquarium-clock",
     githubUrl: "https://github.com/JimmyThai101/aquarium-clock",
     liveDemoUrl: "https://aquarium-clock.vercel.app/",
@@ -56,9 +56,9 @@ export const projects: Project[] = [
     id: "arcade-lounge",
     title: "Arcade Lounge",
     shortDescription:
-      "A casino-inspired mini-game arcade with six playable games, Jimmycoin fake currency, Google sign-in, and a global leaderboard.",
+      "A casino-inspired arcade with eight games, Jimmycoin fake currency, Google sign-in, and three leaderboards—wins, Neon Dash time, and Jimmy Flappy score.",
     longDescription:
-      "A Next.js game hub featuring Make 21, Rock Paper Scissors, High Card, Dice Duel, Memory Match, and Slots. Win free games to earn Jimmycoin, wager or spin it for fun only, track local stats, and climb a PostgreSQL-backed wins leaderboard after Google sign-in.",
+      "A Next.js hub with Make 21 (hit, stay, double down, split), Rock Paper Scissors, High Card, Dice Duel, Memory Match, Slots, plus canvas runners Neon Dash and Jimmy Flappy. Free table games earn Jimmycoin; Make 21 and Slots spend it. Guests keep local stats; signed-in players climb a wins board plus separate Dash-time and Flappy-score boards.",
     technologies: [
       "Next.js",
       "React",
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/arcade-lounge.png",
     imageAlt:
-      "Arcade Lounge hub showing six mini-game cards, Jimmycoin balance, and a global leaderboard",
+      "Arcade Lounge hub showing mini-game cards, Jimmycoin balance, and leaderboards",
     caseStudySlug: "arcade-lounge",
     githubUrl: "https://github.com/JimmyThai101/Arcade-lounge",
     liveDemoUrl: "https://arcade-lounge-cyan.vercel.app/",

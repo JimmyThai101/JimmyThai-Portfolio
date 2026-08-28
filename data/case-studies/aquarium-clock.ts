@@ -5,7 +5,7 @@ export const aquariumClockCaseStudy: CaseStudy = {
   projectId: "aquarium-clock",
   title: "Aquarium Clock",
   hero: {
-    statement: "A readable clock first—an underwater mood second.",
+    statement: "A readable clock first—aquarium, beach, or space second.",
     role: "Personal Project — Designer & Developer",
     timeline: "2026",
     technologies: [
@@ -16,17 +16,17 @@ export const aquariumClockCaseStudy: CaseStudy = {
       "CSS Animations",
     ],
     summary:
-      "An ambient fullscreen clock with day-night lighting, gentle scene motion, and a reduced-motion path that never hides the time.",
+      "An ambient fullscreen clock with three scenes, five aquarium looks, day-night lighting, a next-event timer, optional sound, and a reduced-motion path that never hides the time.",
   },
   heroImage: {
     src: "/images/projects/aquarium-clock.png",
     alt: "Aquarium Clock in night mood showing 12-hour time over a dark underwater scene",
     caption:
-      "Night mood locked manually—deep blue scene, high-contrast clock, controls still one tap away.",
+      "Night mood locked on the default aquarium scene—high-contrast clock, with scene, look, event, and sound still one tap away.",
   },
   metrics: [
-    { value: "0", label: "Backend services required" },
-    { value: "4", label: "Lighting moods: morning to night" },
+    { value: "3", label: "Scenes: aquarium, beach, and space" },
+    { value: "5", label: "Aquarium looks, classic to coral reef" },
     { value: "12/24", label: "Time formats with local save" },
     { value: "A11y", label: "Reduced-motion never hides the time" },
   ],
@@ -38,7 +38,7 @@ export const aquariumClockCaseStudy: CaseStudy = {
     },
     solution: {
       title: "Stable time, soft environment",
-      body: "A calm center panel carries the time. Scene layers animate behind it and can quiet down instantly.",
+      body: "A calm center panel carries the time, world clocks, and the next event. Scenes animate behind it and can quiet down instantly.",
     },
   },
   process: {
@@ -50,23 +50,23 @@ export const aquariumClockCaseStudy: CaseStudy = {
       },
       {
         label: "useClock",
-        description: "Tracks time, date labels, and 12/24 preference.",
+        description: "Tracks local time, date labels, 12/24 preference, and world clocks.",
       },
       {
         label: "useLighting",
         description: "Maps local time to morning through night, or a manual lock.",
       },
       {
-        label: "Aquarium layers",
-        description: "Fish, bubbles, seaweed, and rays stay presentational.",
+        label: "Scenes and looks",
+        description: "Aquarium, beach, or space; five aquarium palettes stay presentational.",
       },
       {
         label: "Controls",
-        description: "Format, lighting, fullscreen, and reduced motion.",
+        description: "Scene, look, format, lighting, event, sound, fullscreen, and reduced motion.",
       },
       {
         label: "Hydration-safe prefs",
-        description: "localStorage values apply after mount to avoid mismatches.",
+        description: "localStorage for format, lighting, scene, look, sound, and the next event.",
       },
     ],
   },
@@ -79,19 +79,19 @@ export const aquariumClockCaseStudy: CaseStudy = {
       src: "/images/projects/aquarium-clock/night-mood.png",
       alt: "Aquarium Clock night mood with 12-hour PM time and Less motion control",
       caption:
-        "Mood control in action: Night lighting shifts the whole aquarium without touching the clock type.",
+        "Mood control in action: Night lighting shifts the aquarium without touching scene, look, or clock type.",
     },
     {
       src: "/images/projects/aquarium-clock/reduced-motion-24h.png",
       alt: "Aquarium Clock in 24-hour format with afternoon lighting and quieter motion",
       caption:
-        "24-hour format plus a calmer motion path—time stays primary when the scene needs to quiet down.",
+        "24-hour format plus a calmer motion path—time, world clocks, and the next event stay primary when the scene quiets down.",
     },
     {
       src: "/images/projects/aquarium-clock/scene-layers.png",
       alt: "Diagram of Aquarium Clock scene layers from background to clock panel",
       caption:
-        "Fish, bubbles, seaweed, and rays stay in separate layers so mood and motion can change independently.",
+        "The default aquarium still layers fish, jellyfish, turtle, crab, bubbles, and rays so mood, look, and motion can change independently.",
     },
   ],
   decisions: {
@@ -106,18 +106,18 @@ export const aquariumClockCaseStudy: CaseStudy = {
         why: "An ambient desk display shouldn’t require accounts or a backend.",
       },
       {
-        decision: "Split lighting from format",
-        why: "People change time format and visual mood for different reasons.",
+        decision: "Split lighting, scene, look, and format",
+        why: "People change format, lighting, scene, and look for different reasons—so each control is independent.",
       },
     ],
   },
   contribution: {
     title: "What I personally built",
     items: [
-      "Full Next.js UI, aquarium scene components, and control surface",
-      "Time-of-day lighting system with manual override",
-      "Fullscreen mode and hydration-safe preference storage",
-      "Reduced-motion support and responsive ambient layout",
+      "Full Next.js UI, three scene backdrops, aquarium life, and control surface",
+      "Time-of-day lighting with manual override, plus five aquarium looks",
+      "Named event/timer, optional Web Audio ambience, and hydration-safe prefs",
+      "Weather-aware rain, idle-hiding controls, fullscreen, and reduced motion",
     ],
   },
   lessons: {
@@ -131,16 +131,16 @@ export const aquariumClockCaseStudy: CaseStudy = {
   details: [
     {
       title: "AI collaboration note",
-      body: "Built with Cursor pair-programming from a detailed product brief. I directed stack limits, accessibility requirements, and visual iterations—no custom model training.",
+      body: "Built with Cursor pair-programming from a detailed product brief, then narrower passes for scenes, looks, events, and sound. I directed stack limits, accessibility, and visual iterations—no custom model training.",
     },
     {
       title: "Sample build constraints I gave the AI",
-      body: "No unnecessary packages. Original CSS/SVG only. No Math.random during render. Fixed config for fish and bubbles. Respect prefers-reduced-motion. Avoid hydration errors for time and localStorage.",
+      body: "No unnecessary packages. Original CSS/SVG only. No Math.random during render. Fixed config for fish, jellyfish, and bubbles. Respect prefers-reduced-motion. Avoid hydration errors for time and localStorage. Sound stays off until the user opts in.",
     },
   ],
   cta: {
     title: "Try the ambient clock live",
-    body: "Open the deployed app, or inspect the source if you want the scene structure.",
+    body: "Open the deployed app to cycle scenes and looks, or inspect the source if you want the scene structure.",
     primaryLabel: "Live demo",
     primaryHref: "https://aquarium-clock.vercel.app/",
     primaryExternal: true,
