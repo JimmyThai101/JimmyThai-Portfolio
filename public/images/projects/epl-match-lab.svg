@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="EPL Match Lab snapshot comparing Arsenal and Manchester City">
+  <rect width="1280" height="720" fill="#f4f7fb"/>
+  <rect x="80" y="48" width="1120" height="140" rx="24" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="120" y="88" fill="#059669" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="2">GAMEWEEK 5</text>
+  <text x="120" y="128" fill="#0f172a" font-family="system-ui, sans-serif" font-size="32" font-weight="800">Pick any matchup</text>
+  <text x="1160" y="88" fill="#64748b" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">50/380 matches played</text>
+  <text x="640" y="164" fill="#334155" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">Arsenal vs Man City</text>
+  <rect x="80" y="208" width="540" height="452" rx="24" fill="#ffffff" stroke="#e2e8f0"/>
+  <rect x="660" y="208" width="540" height="452" rx="24" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="120" y="256" fill="#0f172a" font-family="system-ui, sans-serif" font-size="24" font-weight="700">Arsenal</text>
+  <text x="120" y="286" fill="#64748b" font-family="system-ui, sans-serif" font-size="14">Coach: Mikel Arteta · 2nd · 12 pts</text>
+  <text x="700" y="256" fill="#0f172a" font-family="system-ui, sans-serif" font-size="24" font-weight="700">Man City</text>
+  <text x="700" y="286" fill="#64748b" font-family="system-ui, sans-serif" font-size="14">Coach: Enzo Maresca · 1st · 15 pts</text>
+  <rect x="120" y="320" width="210" height="96" rx="16" fill="#f8fafc"/>
+  <text x="140" y="352" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Goals / game</text>
+  <text x="140" y="392" fill="#0f172a" font-family="system-ui, sans-serif" font-size="28" font-weight="700">1.6</text>
+  <rect x="350" y="320" width="210" height="96" rx="16" fill="#f8fafc"/>
+  <text x="370" y="352" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Conceded / game</text>
+  <text x="370" y="392" fill="#0f172a" font-family="system-ui, sans-serif" font-size="28" font-weight="700">0.8</text>
+  <rect x="700" y="320" width="210" height="96" rx="16" fill="#f8fafc"/>
+  <text x="720" y="352" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Goals / game</text>
+  <text x="720" y="392" fill="#0f172a" font-family="system-ui, sans-serif" font-size="28" font-weight="700">2.6</text>
+  <rect x="930" y="320" width="210" height="96" rx="16" fill="#f8fafc"/>
+  <text x="950" y="352" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Conceded / game</text>
+  <text x="950" y="392" fill="#0f172a" font-family="system-ui, sans-serif" font-size="28" font-weight="700">1.0</text>
+  <text x="120" y="468" fill="#334155" font-family="system-ui, sans-serif" font-size="14">Form WWWWL · Emirates Stadium</text>
+  <text x="700" y="468" fill="#334155" font-family="system-ui, sans-serif" font-size="14">Form WWWWW · Etihad Stadium</text>
+  <text x="120" y="520" fill="#0f172a" font-family="system-ui, sans-serif" font-size="16" font-weight="600">Plain-English reading</text>
+  <text x="120" y="556" fill="#475569" font-family="system-ui, sans-serif" font-size="14">City sits 1st on 15 points. Arsenal is harder to score against.</text>
+  <text x="120" y="584" fill="#475569" font-family="system-ui, sans-serif" font-size="14">This is a reading of counting stats, not a match prediction.</text>
+  <text x="120" y="628" fill="#059669" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Snapshot · Table · Fixtures · Players · Money · Words</text>
+</svg>

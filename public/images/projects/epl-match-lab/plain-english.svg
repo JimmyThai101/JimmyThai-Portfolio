@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Plain-English reading instead of a prediction">
+  <rect width="1280" height="800" fill="#18181b"/>
+  <text x="640" y="90" fill="#fafafa" font-family="system-ui, sans-serif" font-size="28" font-weight="600" text-anchor="middle">A reading, not a forecast</text>
+  <rect x="80" y="160" width="520" height="480" rx="16" fill="#09090b" stroke="#7f1d1d"/>
+  <text x="340" y="230" fill="#fb7185" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">WHAT THIS LAB IS NOT</text>
+  <text x="340" y="290" fill="#e4e4e7" font-family="system-ui, sans-serif" font-size="22" font-weight="600" text-anchor="middle">Match predictor</text>
+  <text x="340" y="340" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">No win/draw/loss percentages.</text>
+  <text x="340" y="372" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">No betting tips. No invented wages.</text>
+  <text x="340" y="420" fill="#71717a" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Early-season sample size is called out</text>
+  <text x="340" y="448" fill="#71717a" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">when a hot streak can swing the numbers.</text>
+  <rect x="680" y="160" width="520" height="480" rx="16" fill="#09090b" stroke="#10b981"/>
+  <text x="940" y="230" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">WHAT IT DOES</text>
+  <text x="940" y="290" fill="#e4e4e7" font-family="system-ui, sans-serif" font-size="22" font-weight="600" text-anchor="middle">Plain-English comparison</text>
+  <text x="940" y="340" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Who sits higher. Who scores more.</text>
+  <text x="940" y="372" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Who is harder to score against. xG explained.</text>
+  <text x="940" y="420" fill="#71717a" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Intro page teaches soccer from scratch.</text>
+  <text x="940" y="448" fill="#71717a" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Glossary covers goal, draw, table, form, xG.</text>
+  <text x="640" y="720" fill="#fafafa" font-family="Georgia, serif" font-size="20" text-anchor="middle">This is a reading of counting stats, not a match prediction.</text>
+</svg>

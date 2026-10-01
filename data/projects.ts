@@ -32,6 +32,29 @@ export const projects: Project[] = [
     caseStudySlug: "plannedquest",
   },
   {
+    id: "epl-match-lab",
+    title: "EPL Match Lab",
+    shortDescription:
+      "Premier League match analysis in plain English: pick any two clubs, compare scoring and defending, then optionally open the table, fixtures, squads, and a beginner glossary.",
+    longDescription:
+      "A Next.js lab on public feeds only—FPL for the table, scores, squads, and xG; Wikidata for coaches; TheSportsDB for stadiums and wages when listed. The snapshot writes a counting-stat reading and says it is not a prediction. Missing values stay blank. Shareable URLs pin the pair.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "FPL API",
+      "Wikidata",
+      "TheSportsDB",
+    ],
+    image: "/images/projects/epl-match-lab.svg",
+    imageAlt:
+      "EPL Match Lab snapshot comparing two Premier League clubs with goals, xG, form, and a plain-English reading",
+    caseStudySlug: "epl-match-lab",
+    githubUrl: "https://github.com/JimmyThai101/epl-match-lab",
+    liveDemoUrl: "https://epl-match-lab-rho.vercel.app/",
+  },
+  {
     id: "aquarium-clock",
     title: "Aquarium Clock",
     shortDescription:

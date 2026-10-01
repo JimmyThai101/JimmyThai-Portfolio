@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="EPL Match Lab six-section lab">
+  <rect width="1280" height="800" fill="#18181b"/>
+  <text x="640" y="88" fill="#fafafa" font-family="system-ui, sans-serif" font-size="28" font-weight="600" text-anchor="middle">Six optional sections</text>
+  <text x="640" y="126" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="15" text-anchor="middle">Start with the snapshot. Everything else is optional.</text>
+  <rect x="80" y="180" width="340" height="220" rx="16" fill="#09090b" stroke="#10b981"/>
+  <text x="250" y="250" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">1. SNAPSHOT</text>
+  <text x="250" y="290" fill="#fafafa" font-family="system-ui, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Compare two clubs</text>
+  <text x="250" y="328" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Goals, xG, form, and a</text>
+  <text x="250" y="350" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">plain-English reading</text>
+  <rect x="470" y="180" width="340" height="220" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="640" y="250" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">2. TABLE</text>
+  <text x="640" y="290" fill="#fafafa" font-family="system-ui, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Whole league</text>
+  <text x="640" y="328" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Click a club to load it</text>
+  <text x="640" y="350" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">as Team A</text>
+  <rect x="860" y="180" width="340" height="220" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="1030" y="250" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">3. FIXTURES</text>
+  <text x="1030" y="290" fill="#fafafa" font-family="system-ui, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Scores and dates</text>
+  <text x="1030" y="328" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Live FPL minutes, H2H,</text>
+  <text x="1030" y="350" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">and upcoming gameweeks</text>
+  <rect x="80" y="440" width="340" height="220" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="250" y="510" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">4. PLAYERS</text>
+  <text x="250" y="550" fill="#fafafa" font-family="system-ui, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Search the squads</text>
+  <text x="250" y="588" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Minutes, xG, news, and</text>
+  <text x="250" y="610" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">FPL prices labeled as a game</text>
+  <rect x="470" y="440" width="340" height="220" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="640" y="510" fill="#fb7185" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">5. MONEY</text>
+  <text x="640" y="550" fill="#fafafa" font-family="system-ui, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Only if listed</text>
+  <text x="640" y="588" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Wages stay blank when</text>
+  <text x="640" y="610" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">the public feed has none</text>
+  <rect x="860" y="440" width="340" height="220" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="1030" y="510" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">6. WORDS</text>
+  <text x="1030" y="550" fill="#fafafa" font-family="system-ui, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Beginner glossary</text>
+  <text x="1030" y="588" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Goal, draw, table, form,</text>
+  <text x="1030" y="610" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">xG, clean sheet, FPL price</text>
+  <text x="640" y="720" fill="#71717a" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Shareable URL keeps the pair and the open tab</text>
+</svg>

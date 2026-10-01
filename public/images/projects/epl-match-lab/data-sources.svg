@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="EPL Match Lab public data sources">
+  <rect width="1280" height="800" fill="#18181b"/>
+  <text x="640" y="90" fill="#fafafa" font-family="system-ui, sans-serif" font-size="28" font-weight="600" text-anchor="middle">Public feeds only</text>
+  <text x="640" y="128" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="15" text-anchor="middle">If a coach, wage, or contract date is not listed, the lab leaves it blank.</text>
+  <rect x="80" y="200" width="340" height="280" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="250" y="270" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">FANTASY PREMIER LEAGUE</text>
+  <text x="250" y="320" fill="#fafafa" font-family="system-ui, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Table and scores</text>
+  <text x="250" y="360" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Fixtures, standings, form,</text>
+  <text x="250" y="384" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">squads, xG, and live minutes</text>
+  <text x="250" y="430" fill="#71717a" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">Refresh: squads ~30m / fixtures ~5m</text>
+  <rect x="470" y="200" width="340" height="280" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="640" y="270" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">WIKIDATA</text>
+  <text x="640" y="320" fill="#fafafa" font-family="system-ui, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Current coaches</text>
+  <text x="640" y="360" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Managers join the snapshot</text>
+  <text x="640" y="384" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">when a public record exists</text>
+  <text x="640" y="430" fill="#71717a" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">Otherwise: Not listed on Wikidata</text>
+  <rect x="860" y="200" width="340" height="280" rx="16" fill="#09090b" stroke="#27272a"/>
+  <text x="1030" y="270" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">THESPORTSDB</text>
+  <text x="1030" y="320" fill="#fafafa" font-family="system-ui, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Stadium and wages</text>
+  <text x="1030" y="360" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Community notes, shown only</text>
+  <text x="1030" y="384" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">when a figure is actually there</text>
+  <text x="1030" y="430" fill="#71717a" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">FPL prices stay labeled as a game</text>
+  <rect x="80" y="520" width="1120" height="180" rx="16" fill="#09090b" stroke="#10b981" stroke-opacity="0.5"/>
+  <text x="640" y="590" fill="#fafafa" font-family="system-ui, sans-serif" font-size="22" font-weight="600" text-anchor="middle">Next.js /api/league + /api/club-notes</text>
+  <text x="640" y="632" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="15" text-anchor="middle">No paid scrape. Missing values stay blank. Not an official Premier League product.</text>
+</svg>
