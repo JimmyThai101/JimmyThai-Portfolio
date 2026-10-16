@@ -20,10 +20,10 @@ export const eplMatchLabCaseStudy: CaseStudy = {
       "A beginner-friendly lab: pick any two Premier League clubs, read a side-by-side snapshot, then optionally open the table, fixtures, squads, wage notes, and a glossary.",
   },
   heroImage: {
-    src: "/images/projects/epl-match-lab.svg",
-    alt: "EPL Match Lab snapshot comparing Arsenal and Manchester City with goals, xG, and form",
+    src: "/images/projects/epl-match-lab.png",
+    alt: "EPL Match Lab snapshot comparing Arsenal and Manchester City with form, coaches, and scoring rates",
     caption:
-      "Default snapshot: any two clubs, counting stats, coaches when listed, and a reading that refuses to predict the score.",
+      "Default snapshot: pick any two clubs, then read form, coaches, stadiums, and scoring rates side by side.",
   },
   metrics: [
     { value: "20", label: "Premier League clubs you can pair" },
@@ -77,22 +77,22 @@ export const eplMatchLabCaseStudy: CaseStudy = {
   },
   shots: [
     {
-      src: "/images/projects/epl-match-lab/lab-tabs.svg",
-      alt: "Six lab sections from snapshot through glossary",
+      src: "/images/projects/epl-match-lab/intro.png",
+      alt: "EPL Match Lab intro explaining soccer in 60 seconds and picking two clubs",
       caption:
-        "Snapshot is the default. Table, fixtures, players, money, and words stay one tap away.",
+        "Landing page: a 60-second soccer explainer, then home/away pickers with a live scoring-rate preview.",
     },
     {
-      src: "/images/projects/epl-match-lab/data-sources.svg",
-      alt: "Diagram of FPL, Wikidata, and TheSportsDB feeds",
+      src: "/images/projects/epl-match-lab/table.png",
+      alt: "Premier League table inside EPL Match Lab with points and form",
       caption:
-        "League table and scores from FPL fixtures. Coaches from Wikidata. Stadium and wages from TheSportsDB when listed.",
+        "Full table from public FPL fixtures. Tap a club to load it as home on the left.",
     },
     {
-      src: "/images/projects/epl-match-lab/plain-english.svg",
-      alt: "Diagram contrasting a prediction widget with a plain-English reading",
+      src: "/images/projects/epl-match-lab/play.png",
+      alt: "Sample match pitch in EPL Match Lab with Arsenal vs Manchester City at 0-0",
       caption:
-        "No win percentages. The reading explains who is higher, who scores more, and what xG means.",
+        "Play is a sped-up sample match on a pitch using season scoring rates—not a real fixture and not a prediction.",
     },
   ],
   decisions: {

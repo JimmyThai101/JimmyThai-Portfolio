@@ -47,9 +47,9 @@ export const projects: Project[] = [
       "Wikidata",
       "TheSportsDB",
     ],
-    image: "/images/projects/epl-match-lab.svg",
+    image: "/images/projects/epl-match-lab.png",
     imageAlt:
-      "EPL Match Lab snapshot comparing two Premier League clubs with goals, xG, form, and a plain-English reading",
+      "EPL Match Lab snapshot comparing Arsenal and Manchester City with form, coaches, and scoring rates",
     caseStudySlug: "epl-match-lab",
     githubUrl: "https://github.com/JimmyThai101/epl-match-lab",
     liveDemoUrl: "https://epl-match-lab-rho.vercel.app/",
