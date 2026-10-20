@@ -12,6 +12,49 @@ export const profile = {
     alt: "Professional headshot of Jimmy Thai in a suit",
   },
 
+  /**
+   * Extra page at /about. Add photos or story blocks here whenever you want
+   * to keep talking — the page grows from these lists.
+   */
+  moreAbout: {
+    title: "More about me",
+    intro:
+      "This is the extra tab — the stuff that does not fit in a two-paragraph résumé bio. Santa Ana, USC, graduation, and whatever else I feel like putting here.",
+    stories: [
+      {
+        title: "Santa Ana → USC",
+        body: "I am heading to USC for Computer Engineering and Computer Science. The pennant photo is from signing day at Santa Ana High School — that is the version of me that is not a GitHub profile.",
+      },
+      {
+        title: "Class of 2026",
+        body: "I graduated in 2026. I like building things, and I also like being a person who went to Saints, held a Trojans pennant, and walked the ceremony with everyone else. I will keep adding to this page.",
+      },
+    ],
+    photos: [
+      {
+        src: "/images/about/usc-signing.jpg",
+        alt: "Jimmy Thai holding a USC Trojans pennant at Santa Ana High School",
+        caption: "Signing with USC at Santa Ana High School",
+        featured: true,
+        objectPosition: "center 22%",
+      },
+      {
+        src: "/images/about/graduation-portrait.jpg",
+        alt: "Jimmy Thai in cap and gown at high school graduation",
+        caption: "Graduation, Class of 2026",
+        featured: false,
+        objectPosition: "center 12%",
+      },
+      {
+        src: "/images/about/graduation-walk.jpg",
+        alt: "Jimmy Thai walking the graduation ceremony in a Class of 2026 stole",
+        caption: "Walking the ceremony",
+        featured: false,
+        objectPosition: "center 42%",
+      },
+    ],
+  },
+
   email: "jimmythai2108@gmail.com",
   githubUrl: "https://github.com/JimmyThai101",
   linkedinUrl: "https://www.linkedin.com/in/jimmy-thai-a6521b31a/",

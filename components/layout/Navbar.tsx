@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { profile } from "@/data/profile";
 
 const navLinks = [
   { href: "/#about", label: "About" },
+  { href: "/about", label: "More" },
   { href: "/#experience", label: "Experience" },
   { href: "/#projects", label: "Projects" },
   { href: "/#skills", label: "Skills" },
@@ -14,9 +16,26 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   function closeMenu() {
     setIsOpen(false);
+  }
+
+  function linkClass(href: string, mobile = false) {
+    const isActive = href === "/about" && pathname === "/about";
+    if (mobile) {
+      return [
+        "block rounded-md px-3 py-2.5 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
+        isActive
+          ? "bg-zinc-900 text-zinc-50"
+          : "text-zinc-300 hover:bg-zinc-900 hover:text-zinc-50",
+      ].join(" ");
+    }
+    return [
+      "rounded-md px-3 py-2 text-sm transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
+      isActive ? "text-zinc-50" : "text-zinc-400 hover:text-zinc-50",
+    ].join(" ");
   }
 
   return (
@@ -37,12 +56,9 @@ export default function Navbar() {
         <ul className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
-                className="rounded-md px-3 py-2 text-sm text-zinc-400 transition-colors duration-200 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
-              >
+              <Link href={link.href} className={linkClass(link.href)}>
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -67,13 +83,13 @@ export default function Navbar() {
           <ul className="mx-auto flex max-w-5xl flex-col gap-1 px-6 py-4">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
-                  className="block rounded-md px-3 py-2.5 text-sm text-zinc-300 transition-colors hover:bg-zinc-900 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
+                  className={linkClass(link.href, true)}
                   onClick={closeMenu}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionHeading from "@/components/ui/SectionHeading";
+import Button from "@/components/ui/Button";
 import { profile } from "@/data/profile";
 
 export default function AboutSection() {
@@ -20,6 +21,11 @@ export default function AboutSection() {
             <p className="text-base leading-relaxed text-zinc-400 sm:text-lg">
               {profile.aboutDetails}
             </p>
+            <div className="pt-2">
+              <Button href="/about" variant="secondary">
+                Learn more about me
+              </Button>
+            </div>
           </div>
 
           <div className="relative mx-auto w-full max-w-xs md:mx-0 md:max-w-none md:justify-self-end">
